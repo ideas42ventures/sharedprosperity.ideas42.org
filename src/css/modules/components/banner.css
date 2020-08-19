@@ -1,0 +1,13 @@
+.banner nav {
+  grid-column: 1 / -1;
+}
+
+.banner ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.banner li {
+  padding: 0.5rem;
+}

@@ -1,0 +1,21 @@
+html {
+  /* 
+    We use calc here so we can see the pixel value. This isn't for changing
+    the end style, it's to make it easier for us to see the value.
+  */
+  --g-row: calc(10 / 16 * 1rem);
+  --g-col: calc(200 / 16 * 1rem);
+  --g-gutter: calc(25 / 16 * 1rem);
+  --g-column-template: repeat(auto-fill, minmax(var(--g-col), 1fr));
+}
+
+.g-main {
+  display: grid;
+  gap: var(--g-gutter);
+  grid-template-columns: var(--g-column-template);
+}
+
+.g-padded {
+  padding-left: var(--g-gutter);
+  padding-right: var(--g-gutter);
+}

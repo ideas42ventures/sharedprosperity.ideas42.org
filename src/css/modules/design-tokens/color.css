@@ -1,0 +1,18 @@
+html {
+  /* color definitions */
+  --color-base: #1d0354;
+  --color-accent-active: #e50053;
+  --color-accent: #0526ff;
+
+  /* color general aliases */
+  --color-text-primary: var(--color-base);
+}
+
+html,
+body {
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-accent-active);
+}

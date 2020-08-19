@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" data-page="{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
+  <head>
+    {% include "head-meta.njk" %}
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.svg">
+    <link href="/css/site.css" rel="stylesheet">
+  </head>
+
+  <body>
+    {% include "components/banner.njk" %}
+    
+    <main class="g-main g-padded">
+    {% block main -%}{% endblock -%}
+    </main>
+
+    {% include "components/footer.njk" %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="theme-color" content="#0F2043">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% set metaTitle = title or "Eleventy Starter" -%}
+{% set ogDescription = meta.description or "A very opinionated static site project scaffold with Eleventy." -%}
+
+<title>{{ metaTitle }}</title>
+<meta property="og:title" content="{{ metaTitle }}">
+<meta name="twitter:title" content="{{ metaTitle }}">
+<meta property="og:site_name" content="Eleventy Starter">
+
+<meta name="description" content="{{ ogDescription }}">
+<meta property="og:description" content="{{ ogDescription }}">
+<meta name="twitter:description" content="{{ ogDescription }}">
+
+<meta property="og:url" content="https://eleventy-starter.netlify.app/"/>
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="{{ meta.card or 'summary' }}">
