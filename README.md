@@ -1,9 +1,8 @@
-#  sharedprosperity.ideas42.org
-Private [![Netlify Status](https://api.netlify.com/api/v1/badges/4eb519eb-9518-4b07-bd0a-f7a5610d3ee3/deploy-status)](https://app.netlify.com/sites/ideas42ventures-eleventy-starter/deploys)
+#  sharedprosperity.ideas42.org [![Netlify Status](https://api.netlify.com/api/v1/badges/68152a7c-cb23-439c-a8aa-91f505587fa5/deploy-status)](https://app.netlify.com/sites/sharedprosperity-ideas42/deploys)
 
 ## Environments
 
-- (✏️ CHANGE ME FOR YOUR PROJECT) Production: [ideas42ventures-eleventy-starter.netlify.app/](https://ideas42ventures-eleventy-starter.netlify.app/)
+- Production: (temp during development) [sharedprosperity-ideas42.netlify.app](https://sharedprosperity-ideas42.netlify.app)
 - Staging: Every pull request gets a preview deploy URL. Check the PR or Netlify UI for it.
 
 ## Contributing
@@ -19,8 +18,6 @@ Private [![Netlify Status](https://api.netlify.com/api/v1/badges/4eb519eb-9518-4
 ### Local setup
 
 #### Clone the repo
-
-(✏️ CHANGE ME FOR YOUR PROJECT)
 
 ```
 git clone git@github.com:orgname/sharedprosperity.ideas42.org.git
