@@ -1,8 +1,8 @@
 html {
   /* color definitions */
-  --color-base: #1d0354;
-  --color-accent-active: #e50053;
-  --color-accent: #0526ff;
+  --color-base: #252525;
+  --color-accent-active: blue;
+  --color-accent: #ccc;
 
   /* color general aliases */
   --color-text-primary: var(--color-base);

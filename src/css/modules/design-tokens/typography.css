@@ -1,6 +1,6 @@
 html,
 body {
-  --font-display: georgia, serif;
+  --font-display: helvetica, serif;
   --font-body: helvetica, sans-serif;
   font-family: var(--font-body);
   font-size: var(--font-size-1);
