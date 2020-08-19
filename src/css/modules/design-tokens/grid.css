@@ -19,3 +19,7 @@ html {
   padding-left: var(--g-gutter);
   padding-right: var(--g-gutter);
 }
+
+.g-full {
+  grid-column: 1 / -1;
+}

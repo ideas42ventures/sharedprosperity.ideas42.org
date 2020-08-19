@@ -8,3 +8,13 @@
   padding: calc(var(--g-row) * 3) 0;
   text-align: center;
 }
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  padding: 0.5rem;
+}
