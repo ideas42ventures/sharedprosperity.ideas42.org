@@ -1,27 +1,5 @@
-# Eleventy Starter [![Netlify Status](https://api.netlify.com/api/v1/badges/4eb519eb-9518-4b07-bd0a-f7a5610d3ee3/deploy-status)](https://app.netlify.com/sites/ideas42ventures-eleventy-starter/deploys)
-
-A very opinionated static site project scaffold with Eleventy. Made for use as a GitHub template repo.
-
-## How to use this repo
-
-- This is a GitHub template repo. See the [official docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) for a detailed description of how templates work
-- Generate a new repo based off this template with the "Use this repo" button or [Generate](https://github.com/ideas42ventures/eleventy-starter/generate)
-- If deploying to Netlify, create a new site from the generated repo
-- In the README of the generated repo
-  - Remove this top section
-  - Update the (✏️ CHANGE ME FOR YOUR PROJECT) sections below
-  - Make any other changes needed for your project
-- From there, make any changes needed to the project. Projects are not required to continue using anything in this template
-
-## What's included
-
-- Standard Eleventy foundation with decisions made about templates and locations
-- Local dev tooling; Prettier, eslint, and precommit hooks for both with lint-staged and husky
-- A recommened directory structure for templates and static assets
-- A recommended CSS organization structure with basic concatenation
-- A working web manifest
-
----
+#  sharedprosperity.ideas42.org
+Private [![Netlify Status](https://api.netlify.com/api/v1/badges/4eb519eb-9518-4b07-bd0a-f7a5610d3ee3/deploy-status)](https://app.netlify.com/sites/ideas42ventures-eleventy-starter/deploys)
 
 ## Environments
 
@@ -45,8 +23,8 @@ A very opinionated static site project scaffold with Eleventy. Made for use as a
 (✏️ CHANGE ME FOR YOUR PROJECT)
 
 ```
-git clone git@github.com:orgname/repo-name.git
-cd repo-name
+git clone git@github.com:orgname/sharedprosperity.ideas42.org.git
+cd sharedprosperity.ideas42.org
 ```
 
 #### Install dependencies
