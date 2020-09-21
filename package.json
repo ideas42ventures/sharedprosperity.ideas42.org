@@ -1,22 +1,24 @@
 {
-  "name": "eleventy-starter",
+  "name": "sharedprosperity.ideas42.org",
   "version": "1.0.0",
-  "description": "A very opinionated static site project scaffold with Eleventy",
+  "description": "The public website for Shared Prosperity Catalyst",
   "main": "index.js",
-  "repository": "git@github.com:ideas42ventures/eleventy-starter.git",
-  "bugs": "https://github.com/ideas42ventures/eleventy-starter/issues",
+  "repository": "git@github.com:ideas42ventures/sharedprosperity.ideas42.org.git",
+  "bugs": "https://github.com/ideas42ventures/sharedprosperity.ideas42.org/issues",
   "contributors": [
     "Tyler Gaw <me@tylergaw.com>"
   ],
   "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
+    "build": "ELEVENTY_ENV=production eleventy",
     "lint": "eslint --fix --ext .js",
     "prettier": "prettier --write src/"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.11.0",
+    "clean-css": "4.2.3",
     "eslint": "7.5.0",
     "eslint-config-prettier": "6.11.0",
     "husky": "4.2.5",
@@ -30,6 +32,6 @@
   },
   "lint-staged": {
     "src/**/*.js": "eslint --fix",
-    "src/": "prettier --write"
+    "src/**/*": "prettier --write"
   }
 }
