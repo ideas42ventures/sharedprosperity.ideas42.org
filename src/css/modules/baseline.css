@@ -34,12 +34,6 @@ th:not([align]) {
   text-align: left;
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
 [hidden],
 .hidden {
   display: none;
@@ -54,4 +48,11 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+html,
+body {
+  color: var(--color-text-primary);
+  margin: 0;
+  padding: 0;
 }
