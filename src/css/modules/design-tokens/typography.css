@@ -1,26 +1,22 @@
 html,
 body {
-  --font-display: helvetica, serif;
-  --font-body: helvetica, sans-serif;
-  font-family: var(--font-body);
-  font-size: var(--font-size-1);
+  --font-sans: "canada-type-gibson", helvetica, sans-serif;
 
   /* Using calc here to document the pixel value */
   --font-size-0: calc(14 / 16 * 1rem);
   --font-size-1: 1rem;
-  --font-size-2: calc(20 / 16 * 1rem);
-  --font-size-3: calc(24 / 16 * 1rem);
-  --font-size-4: calc(32 / 16 * 1rem);
-  --font-size-5: calc(42 / 16 * 1rem);
-  --font-size-6: calc(50 / 16 * 1rem);
-}
+  --font-size-2: calc(18 / 16 * 1rem);
+  --font-size-3: calc(22 / 16 * 1rem);
+  --font-size-4: calc(28 / 16 * 1rem);
+  --font-size-5: calc(32 / 16 * 1rem);
+  --font-size-6: calc(34 / 16 * 1rem);
+  --font-size-7: calc(46 / 16 * 1rem);
+  --font-size-8: calc(90 / 16 * 1rem);
 
-.font--display,
-h1,
-h2,
-h3 {
-  font-family: var(--font-display);
-  font-style: normal;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 h1,
@@ -29,27 +25,73 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: bold;
+b,
+strong {
+  font-weight: 500;
 }
 
 h1 {
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-8);
 }
 
 h2 {
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-7);
 }
 
 h3 {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-6);
 }
 
 h4 {
+  font-size: var(--font-size-4);
+}
+
+h5 {
   font-size: var(--font-size-3);
+}
+
+h6 {
+  font-size: var(--font-size-2);
+}
+
+.font-size-0 {
+  font-size: var(--font-size-0);
+}
+
+.font-size-1 {
+  font-size: var(--font-size-1);
+}
+
+.font-size-2 {
+  font-size: var(--font-size-2);
+}
+
+.font-size-3 {
+  font-size: var(--font-size-3);
+}
+
+.font-size-4 {
+  font-size: var(--font-size-4);
+}
+
+.font-size-5 {
+  font-size: var(--font-size-5);
+}
+
+.font-size-6 {
+  font-size: var(--font-size-6);
+}
+
+.font-size-7 {
+  font-size: var(--font-size-7);
+}
+
+a:focus {
+  background-color: var(--color-accent-active);
+  color: white !important;
+  outline: none;
 }
