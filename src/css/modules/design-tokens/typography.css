@@ -1,5 +1,4 @@
-html,
-body {
+html {
   --font-sans: "canada-type-gibson", helvetica, sans-serif;
 
   /* Using calc here to document the pixel value */
@@ -35,6 +34,7 @@ strong {
 }
 
 h1 {
+  color: var(--color-accent);
   font-size: var(--font-size-8);
 }
 
@@ -90,8 +90,13 @@ h6 {
   font-size: var(--font-size-7);
 }
 
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
 a:focus {
-  background-color: var(--color-accent-active);
+  background-color: var(--color-accent);
   color: white !important;
-  outline: none;
+  outline: 3px solid var(--color-accent);
 }

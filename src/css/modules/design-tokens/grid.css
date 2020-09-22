@@ -4,9 +4,19 @@ html {
     the end style, it's to make it easier for us to see the value.
   */
   --g-row: calc(10 / 16 * 1rem);
-  --g-col: calc(200 / 16 * 1rem);
-  --g-gutter: calc(25 / 16 * 1rem);
+  --g-col: calc(280 / 16 * 1rem);
+  --g-gutter: calc(20 / 16 * 1rem);
   --g-column-template: repeat(auto-fill, minmax(var(--g-col), 1fr));
+  --g-padding-h: var(--g-gutter);
+  --g-width-max: calc(
+    (var(--g-col) * 4) + (var(--g-gutter) * 3) + (var(--g-padding-h) * 2)
+  );
+}
+
+@media (min-width: 47.5em) {
+  html {
+    --g-padding-h: calc(var(--g-gutter) * 2);
+  }
 }
 
 .g-main {
@@ -15,9 +25,17 @@ html {
   grid-template-columns: var(--g-column-template);
 }
 
-.g-padded {
-  padding-left: var(--g-gutter);
-  padding-right: var(--g-gutter);
+.g-centered,
+.g-standard-full {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--g-width-max);
+}
+
+.g-padded,
+.g-standard-full {
+  padding-left: var(--g-padding-h);
+  padding-right: var(--g-padding-h);
 }
 
 .g-full {
