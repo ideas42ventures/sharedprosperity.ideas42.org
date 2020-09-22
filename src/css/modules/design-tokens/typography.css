@@ -18,6 +18,12 @@ html {
   line-height: 1.7;
 }
 
+button,
+input,
+textarea {
+  font-family: var(--font-sans);
+}
+
 h1,
 h2,
 h3,
