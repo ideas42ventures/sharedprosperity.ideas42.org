@@ -1,3 +1,23 @@
-.home__content {
-  grid-column: 1 / -1;
+.efforts {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: calc(var(--g-row) * 10) 0 calc(var(--g-row) * 15) 0;
+  justify-content: space-between;
+}
+
+.effort {
+  flex: 0 1 30%;
+  min-width: 18.75rem;
+}
+
+.effort h2 {
+  font-size: var(--font-size-4);
+}
+
+.effort p {
+  font-size: var(--font-size-3);
+  margin-top: calc(var(--g-row) * 4);
+  padding-right: var(--g-gutter);
 }
