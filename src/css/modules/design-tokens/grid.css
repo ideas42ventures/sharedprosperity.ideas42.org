@@ -11,6 +11,8 @@ html {
   --g-width-max: calc(
     (var(--g-col) * 4) + (var(--g-gutter) * 3) + (var(--g-padding-h) * 2)
   );
+
+  --g-max-3: calc(var(--g-col) * 3 + calc(var(--g-gutter) * 2));
 }
 
 @media (min-width: 47.5em) {
@@ -40,4 +42,8 @@ html {
 
 .g-full {
   grid-column: 1 / -1;
+}
+
+.g-max-3 {
+  max-width: var(--g-max-3);
 }
