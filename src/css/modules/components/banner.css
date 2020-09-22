@@ -30,19 +30,18 @@
   list-style: none;
   justify-content: flex-end;
   margin: 0;
+  max-width: 30rem;
   padding: 0;
 }
 
 .banner li {
-  padding: 0 1rem;
-}
-
-.banner li:last-child {
-  padding-right: 0;
+  flex: 1 1 auto;
+  padding: 0 0.5rem;
+  text-align: right;
 }
 
 .banner__links a {
-  display: block;
+  display: inline-block;
 }
 
 .banner__links a::after {
