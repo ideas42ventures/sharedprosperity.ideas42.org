@@ -1,7 +1,15 @@
 {% extends "layouts/base.njk" %}
 
 {% block main %}
-<div class="g-full">
-  <h1>Page not found</h1>
+<div class="g-standard-full">
+  <header class="hero g-max-3">
+    <h1 class="hero__title">Page Not Found</h1>
+  </header>
+
+  <div class="g-max-3 font-size-3">
+    <p>
+      We couldn’t find that page. How about; <a href="/policy-lab">Policy Lab</a> instead?
+    </p>
+  </div>
 </div>
 {% endblock %}
