@@ -1,8 +1,10 @@
 html {
   /* color definitions */
   --color-base: #3c3e3e;
+  --color-base-rgb: 60, 62, 62;
   --color-base-mid: #a7a9ab;
   --color-accent: #004357;
+  --color-accent-rgb: 0, 67, 87;
   --color-accent-2: #1c8a70;
   --color-accent-3: #8ebc41;
   --color-accent-4: #bed73c;

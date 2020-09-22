@@ -1,3 +1,7 @@
+.banner {
+  background-color: white;
+}
+
 .banner__logo {
   display: block;
   width: 9.375rem;
