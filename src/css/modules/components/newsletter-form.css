@@ -4,6 +4,7 @@
 }
 
 .newsletter__info {
+  padding-top: calc(var(--g-row) * 1.25);
   margin: 0 0 calc(var(--g-row) * 2) 0;
   max-width: 27.5rem;
 }

@@ -5,22 +5,29 @@
 .footer__contents {
   background-color: var(--color-accent);
   color: white;
-  padding-top: calc(var(--g-row) * 3);
-  padding-bottom: calc(var(--g-row) * 6);
+  padding-top: calc(var(--g-row) * 4);
+  padding-bottom: calc(var(--g-row) * 8);
 }
 
 .footer__contents a {
   color: white;
+  text-decoration: underline;
 }
 
-.footer ul {
+.footer__nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: calc(var(--g-row) * 5);
+  padding-top: calc(var(--g-row) * 4);
+}
+
+.footer__nav ul {
   display: flex;
   list-style: none;
   padding: 0;
 }
 
-.footer li {
-  padding: 0.5rem;
+.footer__nav li {
+  margin-right: 1.25rem;
 }
 
 .footer__credits {
