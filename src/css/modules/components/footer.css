@@ -3,9 +3,8 @@
 }
 
 .footer__content {
-  border-top: 1px solid var(--color-accent);
-  grid-column: 1 / -1;
-  padding: calc(var(--g-row) * 3) 0;
+  padding-top: calc(var(--g-row) * 3);
+  padding-bottom: calc(var(--g-row) * 6);
   text-align: center;
 }
 
