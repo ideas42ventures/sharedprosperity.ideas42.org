@@ -1,11 +1,16 @@
 .footer {
-  margin-top: calc(var(--g-row) * 3);
+  background-color: white;
 }
 
-.footer__content {
+.footer__contents {
+  background-color: var(--color-accent);
+  color: white;
   padding-top: calc(var(--g-row) * 3);
   padding-bottom: calc(var(--g-row) * 6);
-  text-align: center;
+}
+
+.footer__contents a {
+  color: white;
 }
 
 .footer ul {
@@ -16,4 +21,51 @@
 
 .footer li {
   padding: 0.5rem;
+}
+
+.footer__credits {
+  background-color: rgba(var(--color-accent-rgb), 0.04);
+}
+
+.credits__content {
+  --padding-v: calc(var(--g-row) * 2.75);
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.4;
+  padding-top: var(--padding-v);
+  padding-bottom: var(--padding-v);
+  text-align: center;
+}
+
+.footer__credits p {
+  font-size: var(--font-size-4);
+  flex: 1 1;
+  margin: 0;
+}
+
+.footer__credits a {
+  display: inline-block;
+}
+
+.footer__credits a img {
+  display: block;
+}
+
+.ideas42-logo-link:focus {
+  background-color: transparent;
+}
+
+@media (min-width: 47.5em) {
+  .credits__content {
+    display: flex;
+    text-align: left;
+  }
+
+  .wells-fargo-logo-link {
+    margin-right: var(--g-gutter);
+  }
+
+  .footer__credits p {
+    font-size: var(--font-size-5);
+  }
 }
