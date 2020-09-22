@@ -15,7 +15,7 @@ html {
   font-family: var(--font-sans);
   font-size: var(--font-size-1);
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 button,
@@ -105,4 +105,8 @@ a:focus {
   background-color: var(--color-accent);
   color: white !important;
   outline: 3px solid var(--color-accent);
+}
+
+main a {
+  color: var(--color-accent);
 }
