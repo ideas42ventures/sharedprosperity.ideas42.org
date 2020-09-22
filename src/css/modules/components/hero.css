@@ -1,3 +1,12 @@
 .hero {
-  overflow: hidden;
+  padding-bottom: calc(var(--g-row) * 4);
+  padding-top: calc(var(--g-row) * 6);
+}
+
+.hero__body {
+  font-size: var(--font-size-6);
+}
+
+.hero .visually-hidden + .hero__body {
+  margin-top: calc(var(--g-row) * 8);
 }
