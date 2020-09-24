@@ -1,0 +1,14 @@
+.btn {
+  background-color: var(--color-accent-2);
+  border: 0;
+  border-radius: var(--border-radius, 2rem);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--font-size, inherit);
+  font-weight: 500;
+  line-height: 1;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+}
