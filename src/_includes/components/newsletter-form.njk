@@ -1,18 +1,16 @@
 <form class="newsletter-form" action="#" method="post">
   <fieldset>
-    <legend>
+    <legend class="font-size-2">
       Subscribe
     </legend>
-    <p class="newsletter__info font-size-2">
+    <p class="newsletter__info">
       Get our newsletter in your inbox for updates about our progress and events.
     </p>
-    <div class="newsletter__controls">
+    <div class="field">
       <label for="newsletter-email">Email address</label>
-      <div class="field--connected-btn">
-        <input id="newsletter-email" type="email" name="email" 
-          placeholder="name@example.com" required />
-        <button type="submit" class="btn">Subscribe</button>
-      </div>
+      <input class="input" id="newsletter-email" type="email" name="email" 
+        placeholder="name@example.com" required />
     </div>
+    <button type="submit" class="btn">Subscribe</button>
   </fieldset>
 </form>

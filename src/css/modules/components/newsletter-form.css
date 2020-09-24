@@ -3,14 +3,15 @@
   padding: 0;
 }
 
-.newsletter__info {
-  padding-top: calc(var(--g-row) * 1.25);
-  margin: 0 0 calc(var(--g-row) * 2) 0;
-  max-width: 27.5rem;
+.newsletter-form legend {
+  font-weight: 500;
+  padding-bottom: 0.25rem;
 }
 
-.newsletter__controls {
-  max-width: 40.625rem;
+.newsletter__info {
+  margin: 0;
+  padding: 0 0 calc(var(--g-row) * 4) 0;
+  max-width: 34ch;
 }
 
 .newsletter-form label {
@@ -21,58 +22,44 @@
   width: 100%;
 }
 
-.field--connected-btn {
-  border-radius: 3px;
-  display: flex;
-  flex-wrap: wrap;
+.field {
+  padding: 0.25rem 0 1.5rem 0;
 }
 
-.field--connected-btn input {
-  --border-radius: 2px 2px 0 0;
+.newsletter-form .field {
+  max-width: 40ch;
+}
+
+.input {
+  --border-radius: 2px;
   background-color: white;
   border: 0;
   border-radius: var(--border-radius);
+  display: block;
   flex: 1;
-  padding: 0.9em;
+  margin: 0;
+  padding: 1em;
   font-size: inherit;
+  width: 100%;
 }
 
-.field--connected-btn input::placeholder {
+.input::placeholder {
   color: rgba(var(--color-base-rgb), 0.8);
 }
 
 .btn {
+  background-color: var(--color-accent-2);
   border: 0;
-  border-radius: var(--border-radius, 2px);
+  border-radius: var(--border-radius, 2rem);
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-size: var(--font-size, inherit);
   font-weight: 500;
   line-height: 1;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
-}
-
-.field--connected-btn .btn {
-  --border-radius: 0 0 2px 2px;
-  padding: 0.75em 1.25em;
-  width: 100%;
-}
-
-.newsletter-form .btn {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: white;
-}
-
-@media (min-width: 40.625em) {
-  .field--connected-btn input {
-    --border-radius: 2px 0 0 2px;
-  }
-
-  .field--connected-btn .btn {
-    --border-radius: 0 2px 2px 0;
-    width: auto;
-  }
 }
 
 @media (min-width: 47.5em) {

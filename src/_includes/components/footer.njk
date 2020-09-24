@@ -1,7 +1,31 @@
 <footer class="footer">
-  <div class="footer__contents">
-    <div class="g-standard-full">
-      {% include "components/newsletter-form.njk" %}
+  <div class="g-standard-full footer__contents">
+    {% include "components/newsletter-form.njk" %}
+
+    <div>
+      <dl class="footer__contacts">
+        <dt class="font-size-2">
+          Media contacts
+        </dt>
+      <dd>
+        <ul>
+          <li>
+            Mitra Salasel, Director of Communications at ideas42 <a href="mailto:mitra@ideas42.org">mitra@ideas42.org</a>
+          </li>
+          <li>
+            Person TBD, Title at Wells Fargo <a href="mailto:tbd@wellsfargo.com">tbd@wellsfargo.com</a>
+          </li>
+        </ul>
+      </dd>
+
+      <div class="footer__logos">
+        <a class="wells-fargo-logo-link" href="https://www.wellsfargo.com/" target="_blank" rel="noopener">
+          <img src="/images/logo-wells-fargo.svg" alt="Wells Fargo logo" width="62"> 
+        </a>
+        <a class="ideas42-logo-link" href="https://ideas42.org" target="_blank" rel="noopener">
+          <img src="/images/logo-ideas42-inverse.svg" alt="ideas42" width="88">
+        </a>
+      </div>
     </div>
   </div>
 </footer>
