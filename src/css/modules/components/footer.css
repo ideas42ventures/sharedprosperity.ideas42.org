@@ -14,10 +14,6 @@
   text-decoration: underline;
 }
 
-.footer__credits {
-  background-color: rgba(var(--color-accent-rgb), 0.04);
-}
-
 .credits__content {
   --padding-v: calc(var(--g-row) * 2.75);
   align-items: center;
@@ -34,14 +30,6 @@
   margin: 0;
 }
 
-.footer__credits a {
-  display: inline-block;
-}
-
-.footer__credits a img {
-  display: block;
-}
-
 .ideas42-logo-link:focus {
   background-color: transparent;
 }
@@ -54,9 +42,5 @@
 
   .wells-fargo-logo-link {
     margin-right: var(--g-gutter);
-  }
-
-  .footer__credits p {
-    font-size: var(--font-size-5);
   }
 }

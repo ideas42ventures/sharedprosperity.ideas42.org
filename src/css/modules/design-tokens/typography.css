@@ -41,15 +41,15 @@ strong {
 
 h1 {
   color: var(--color-accent);
-  font-size: var(--font-size-8);
-}
-
-h2 {
   font-size: var(--font-size-7);
 }
 
-h3 {
+h2 {
   font-size: var(--font-size-6);
+}
+
+h3 {
+  font-size: var(--font-size-5);
 }
 
 h4 {

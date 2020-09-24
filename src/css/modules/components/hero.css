@@ -4,7 +4,7 @@
 }
 
 .hero__body {
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-4);
 }
 
 .hero .visually-hidden + .hero__body {
