@@ -1,3 +1,48 @@
+.credits {
+  --padding-v: calc(var(--g-row) * 2.75);
+  align-items: center;
+  border: 1px solid var(--color-base-mid);
+  border-radius: 3px;
+  flex-wrap: wrap;
+  line-height: 1.4;
+  padding-top: var(--padding-v);
+  padding-bottom: var(--padding-v);
+  text-align: center;
+}
+
+.credits__logos {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.credits a {
+  border: 0;
+  display: block;
+}
+
+.credits p {
+  font-size: var(--font-size-4);
+  flex: 1 1;
+  margin: 0;
+}
+
+.wells-fargo-logo-link {
+  margin-right: var(--g-gutter);
+}
+
+.ideas42-logo-link:focus {
+  background-color: transparent;
+}
+
+@media (min-width: 47.5em) {
+  .credits {
+    display: flex;
+    text-align: left;
+  }
+}
+
 .efforts {
   display: flex;
   flex-wrap: wrap;
