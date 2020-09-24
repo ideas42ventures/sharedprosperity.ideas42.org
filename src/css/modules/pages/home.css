@@ -45,8 +45,21 @@
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: calc(var(--g-row) * 8) 0 calc(var(--g-row) * 8) 0;
+  padding: calc(var(--g-row) * 6) 0 calc(var(--g-row) * 8) 0;
+  position: relative;
   justify-content: center;
+}
+
+.efforts::before {
+  background-color: var(--color-accent-4);
+  clip-path: polygon(4% 30%, 90% 4%, 99% 16%, 89% 98%, 0 65%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: -5%;
+  position: absolute;
+  top: 0;
+  width: 110%;
 }
 
 .effort {
@@ -55,6 +68,7 @@
   max-width: 26rem;
   min-width: 18rem;
   padding: 1rem 0.75rem;
+  position: relative;
 }
 
 .effort a {
@@ -73,6 +87,7 @@
 
 .effort h2 {
   font-size: var(--font-size-4);
+  margin-top: 0.5rem;
 }
 
 .effort p {
