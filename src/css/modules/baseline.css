@@ -61,5 +61,5 @@ body {
 main {
   background-color: white;
   overflow: hidden;
-  padding-bottom: calc(var(--g-row) * 10);
+  padding-bottom: calc(var(--g-row) * 14);
 }
