@@ -64,7 +64,8 @@
 [data-page="policy-lab"] .banner__links [href*="policy-lab"]::after,
 [data-page="ventures"] .banner__links [href*="ventures"]::after,
 [data-page="press"] .banner__links [href*="press"]::after,
-[data-page="contact-us"] .banner__links [href*="contact-us"]::after {
+[data-page="contact-us"] .banner__links [href*="contact-us"]::after,
+[data-page="success"] .banner__links [href*="contact-us"]::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
