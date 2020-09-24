@@ -1,28 +1,33 @@
 {% extends "layouts/base.njk" %}
 
 {% block main %}
-<div class="g-standard-full">
-  <div class="g-max-3">
-    <header class="hero">
-      <h1>About Shared Prosperity Catalyst</h1>
-      <p class="hero__body">
+<header class="hero hero--shaped hero--home">
+  <div class="g-standard-full hero__contents">
+    <div class="hero__intro">
+      <h1 class="hero__title">About Shared Prosperity Catalyst</h1>
+      <p class="hero__body g-max-2">
         A multi-year initiative to bring financial health and prosperity to all 
         in the United States.
       </p>
-      <div class="g-standard-full credits">
+    </div>
+    <div class="credits hero__figure">
       <div class="credits__logos">
-          <a class="wells-fargo-logo-link" href="https://www.wellsfargo.com/" target="_blank" rel="noopener">
-            <img src="/images/logo-wells-fargo.svg" alt="Wells Fargo logo" width="112"> 
-          </a>
-          <a class="ideas42-logo-link" href="https://ideas42.org" target="_blank" rel="noopener">
-            <img src="/images/logo-ideas42.svg" alt="ideas42" width="138">
-          </a>
-        </div>
-        <p>
-          Brought to you by ideas42 with exclusive funding from Wells Fargo
-        </p>
+        <a class="wells-fargo-logo-link" href="https://www.wellsfargo.com/" target="_blank" rel="noopener">
+          <img src="/images/logo-wells-fargo.svg" alt="Wells Fargo logo" width="112"> 
+        </a>
+        <a class="ideas42-logo-link" href="https://ideas42.org" target="_blank" rel="noopener">
+          <img src="/images/logo-ideas42.svg" alt="ideas42" width="138">
+        </a>
       </div>
-    </header>
+      <p>
+        Brought to you by ideas42 with exclusive funding from Wells Fargo
+      </p>
+    </div>
+  </div>
+</header>
+
+<div class="g-standard-full">
+  <div class="g-max-3">
     <h2>Our Mission</h2>
     <div class="font-size-3">
       <p>

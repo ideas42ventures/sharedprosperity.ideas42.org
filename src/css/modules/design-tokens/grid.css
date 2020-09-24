@@ -12,6 +12,7 @@ html {
     (var(--g-col) * 4) + (var(--g-gutter) * 3) + (var(--g-padding-h) * 2)
   );
 
+  --g-max-2: calc(var(--g-col) * 2 + var(--g-gutter));
   --g-max-3: calc(var(--g-col) * 3 + calc(var(--g-gutter) * 2));
 }
 
@@ -42,6 +43,10 @@ html {
 
 .g-full {
   grid-column: 1 / -1;
+}
+
+.g-max-2 {
+  max-width: var(--g-max-2);
 }
 
 .g-max-3 {

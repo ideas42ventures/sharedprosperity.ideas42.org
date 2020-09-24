@@ -1,12 +1,80 @@
-.hero {
-  padding-bottom: calc(var(--g-row) * 4);
-  padding-top: calc(var(--g-row) * 6);
+.hero--shaped {
+  color: white;
+  margin-bottom: calc(var(--g-row) * 3);
+  position: relative;
+  --padding-b: calc(var(--g-row) * 12);
+  --padding-t: calc(var(--g-row) * 13);
+  padding-bottom: var(--padding-b);
+  padding-top: var(--padding-t);
+}
+
+.hero__contents {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__intro {
+  flex: 1 1 calc(var(--g-col) * 1.5);
+  min-width: calc(var(--g-col) * 1);
+  padding-right: 1rem;
+}
+
+.hero__figure {
+  align-self: flex-end;
+  flex: 1 1;
+  margin-top: var(--font-size-3);
+  min-width: var(--g-col);
+}
+
+.hero__title {
+  margin-top: calc(var(--g-row) * 13);
+}
+
+.hero--shaped .hero__title {
+  color: inherit;
+  margin: 0;
 }
 
 .hero__body {
   font-size: var(--font-size-4);
+  margin: 0;
 }
 
-.hero .visually-hidden + .hero__body {
-  margin-top: calc(var(--g-row) * 8);
+.hero--shaped::before {
+  --clip-path: polygon(12% 1rem, 94% 6rem, 96% 15rem, 8% 91%, 4% 6rem);
+  --width: 79rem;
+  --left-pos: calc(50% - var(--width) / 1.75);
+  background-color: var(--color-accent);
+  clip-path: var(--clip-path);
+  content: "";
+  display: block;
+  height: 100%;
+  left: var(--left-pos, 0);
+  position: absolute;
+  top: 0;
+  width: var(--width, 100%);
+}
+
+.hero--home {
+  --padding-b: calc(var(--g-row) * 3);
+  --padding-t: calc(var(--g-row) * 17);
+}
+
+.hero--home::before {
+  --clip-path: polygon(15% 0, 97% 4.4rem, 99% 21rem, 0.5% 100%, 6% 3.5rem);
+}
+
+.hero--policy::before {
+  --clip-path: polygon(
+    5% 4rem,
+    20% 1rem,
+    90% 5rem,
+    88% 13rem,
+    50% 14rem,
+    10% 94%,
+    4% 10rem
+  );
 }
