@@ -45,7 +45,8 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-6);
+  color: var(--color-accent);
+  font-size: var(--font-size-7);
 }
 
 h3 {

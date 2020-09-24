@@ -12,4 +12,6 @@ html {
 
   /* color general aliases */
   --color-text-primary: var(--color-base);
+
+  --shadow-card: 0 0 20px rgba(0, 67, 87, 0.24);
 }
