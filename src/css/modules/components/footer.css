@@ -1,15 +1,72 @@
 .footer {
+  background-color: var(--color-accent-mod);
+  color: white;
+  padding-top: calc(var(--g-row) * 4);
+  padding-bottom: calc(var(--g-row) * 18);
+}
+
+.footer a {
+  border-bottom: 1px solid var(--color-accent-2);
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  border-color: white;
+}
+
+.footer a:not([class]):focus {
   background-color: white;
+  border-color: white;
+  color: var(--color-accent-mod) !important;
+  outline-color: white;
 }
 
 .footer__contents {
-  background-color: var(--color-accent);
-  color: white;
-  padding-top: calc(var(--g-row) * 4);
-  padding-bottom: calc(var(--g-row) * 8);
+  background: transparent
+    url(/images/logo-shared-prosperity-catalyst-mark-inverse.svg) no-repeat
+    1.25rem 1.75rem;
+  background-size: 2.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.footer__contents a {
-  color: white;
-  text-decoration: underline;
+.footer__contents > * {
+  flex: 1 1 50%;
+  min-width: var(--g-col);
+  padding: 1.5rem 0.5rem 2.5rem 3rem;
+}
+
+.footer__contacts {
+  margin: 0;
+}
+
+.footer__contacts dt {
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+}
+
+.footer__contacts dd,
+.footer__contacts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__contacts li {
+  padding-bottom: 0.5rem;
+}
+
+.footer__logos {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  margin-top: calc(var(--g-row) * 3);
+  padding: 1.25rem;
+}
+
+.footer__logos a,
+.footer__logos img {
+  border: 0;
+  display: block;
 }

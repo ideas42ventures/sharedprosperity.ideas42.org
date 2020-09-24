@@ -52,7 +52,7 @@ th:not([align]) {
 
 html,
 body {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-mod);
   color: var(--color-text-primary);
   margin: 0;
   padding: 0;
