@@ -117,3 +117,20 @@ main a {
 main a:hover {
   box-shadow: inset 0 -1em 0 rgba(var(--color-accent-2-rgb), 0.15);
 }
+
+.content-figure {
+  margin-left: 0;
+  padding-bottom: 2.5rem;
+}
+
+.content-figure blockquote {
+  border-left: 1.2rem solid var(--color-accent-4);
+  color: var(--color-accent);
+  margin-left: 0;
+  padding-left: 2rem;
+}
+
+.content-figure figcaption {
+  margin-left: auto;
+  max-width: 44ch;
+}
