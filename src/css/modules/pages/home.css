@@ -9,6 +9,8 @@
   color: var(--color-text-primary);
   padding: calc(var(--g-row) * 2) calc(var(--g-gutter) * 2);
   text-align: center;
+
+  display: none;
 }
 
 @media (min-width: 51.875em) {
