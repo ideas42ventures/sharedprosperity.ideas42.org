@@ -21,11 +21,15 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 1.2rem 0;
 }
 
 .credits a {
   border: 0;
+  display: block;
+}
+
+.credits img {
   display: block;
 }
 
@@ -40,6 +44,7 @@
   margin-right: var(--g-gutter);
 }
 
+.wells-fargo-logo-link:focus,
 .ideas42-logo-link:focus {
   background-color: transparent;
 }

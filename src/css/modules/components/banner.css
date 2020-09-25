@@ -7,12 +7,12 @@
   width: 9.375rem;
 }
 
-.banner__logo:focus .logo-color-accent {
-  fill: white;
+.banner__logo:focus {
+  background-color: transparent;
 }
 
-.banner__logo:focus .logo-base-mid {
-  fill: var(--color-base-mid);
+.banner__logo:active {
+  outline: none;
 }
 
 .banner nav {
