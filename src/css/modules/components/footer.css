@@ -70,3 +70,19 @@
   border: 0;
   display: block;
 }
+
+.footer__nav {
+  margin-top: calc(var(--g-row) * 5);
+}
+
+.footer__nav ul {
+  flex: 1 1 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}

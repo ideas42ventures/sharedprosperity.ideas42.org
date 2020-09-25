@@ -1,3 +1,7 @@
+[data-page="home"] main {
+  padding-bottom: 0;
+}
+
 .credits {
   align-items: center;
   background-color: white;
@@ -17,11 +21,15 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 1.2rem 0;
 }
 
 .credits a {
   border: 0;
+  display: block;
+}
+
+.credits img {
   display: block;
 }
 
@@ -36,8 +44,14 @@
   margin-right: var(--g-gutter);
 }
 
+.wells-fargo-logo-link:focus,
 .ideas42-logo-link:focus {
   background-color: transparent;
+}
+
+.efforts-container {
+  background-color: rgba(var(--color-accent-rgb), 0.04);
+  margin-top: calc(var(--g-row) * 7);
 }
 
 .efforts {
@@ -48,18 +62,6 @@
   padding: calc(var(--g-row) * 6) 0 calc(var(--g-row) * 8) 0;
   position: relative;
   justify-content: center;
-}
-
-.efforts::before {
-  background-color: var(--color-accent-4);
-  clip-path: polygon(4% 30%, 90% 4%, 99% 16%, 89% 98%, 0 65%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: -5%;
-  position: absolute;
-  top: 0;
-  width: 110%;
 }
 
 .effort {
