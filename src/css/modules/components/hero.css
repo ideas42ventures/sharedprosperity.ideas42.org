@@ -56,4 +56,10 @@
     margin-top: -1rem;
     margin-bottom: calc(var(--padding-b) * -2);
   }
+
+  .hero--home {
+    --offset-top: calc(var(--g-row) * 10);
+    --padding-b: calc(var(--g-row) * 9);
+    margin-bottom: calc(var(--g-row) * 8);
+  }
 }
