@@ -2,13 +2,21 @@
 
 ## Environments
 
-- Production: (temp during development) [sharedprosperity-ideas42.netlify.app](https://sharedprosperity-ideas42.netlify.app)
+- Production: [sharedprosperity.ideas42.org](https://sharedprosperity.ideas42.org)
+- Netlify URL: [sharedprosperity-ideas42.netlify.app](https://sharedprosperity-ideas42.netlify.app)
 - Staging: Every pull request gets a preview deploy URL. Check the PR or Netlify UI for it.
+
+### Contact form
+
+We use [Netlify forms](https://docs.netlify.com/forms/setup/) to handle the contact form submission.
+
+- Form submissions are stored in the forms section of Netlify
+- We send a copy of every submission to `spc@ideas42.org`
 
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
-- Hosted on Netlify
+- Hosted on Netlify in the ideas42 Ventures account
 
 ### Requirements
 
