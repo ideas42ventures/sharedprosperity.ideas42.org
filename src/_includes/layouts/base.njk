@@ -24,7 +24,11 @@
   </head>
 
   <body>
-    {% include "components/banner.njk" %}
+    <div class="masthead {% if mastheadStyled %}masthead--styled{% endif %}">
+      {% block masthead -%}
+        {% include "components/banner.njk" %}
+      {% endblock -%}
+    </div>
     
     <main>
     {% block main -%}{% endblock -%}

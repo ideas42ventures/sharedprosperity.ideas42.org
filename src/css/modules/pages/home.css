@@ -1,5 +1,6 @@
 [data-page="home"] main {
   padding-bottom: 0;
+  padding-top: calc(var(--g-row) * 4);
 }
 
 .credits {

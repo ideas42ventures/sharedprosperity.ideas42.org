@@ -1,31 +1,25 @@
+---
+mastheadStyled: true
+---
+
 {% extends "layouts/base.njk" %}
 
-{% block main %}
-<header class="hero hero--styled hero--home">
-  <div class="g-standard-full hero__contents">
-    <div class="hero__intro">
-      <h1 class="hero__title">About Shared Prosperity Catalyst</h1>
-      <p class="hero__body g-max-2">
-        A multi-year initiative to bring financial health and prosperity to all 
-        in the United States.
-      </p>
-    </div>
-    <div class="credits hero__figure">
-      <div class="credits__logos">
-        <a class="wells-fargo-logo-link" href="https://www.wellsfargo.com/" target="_blank" rel="noopener">
-          <img src="/images/logo-wells-fargo.svg" alt="Wells Fargo logo" width="112"> 
-        </a>
-        <a class="ideas42-logo-link" href="https://ideas42.org" target="_blank" rel="noopener">
-          <img src="/images/logo-ideas42.svg" alt="ideas42" width="138">
-        </a>
+{% block masthead %}
+  {{ super() }}
+  <header class="hero hero--styled hero--home">
+    <div class="g-standard-full hero__contents">
+      <div class="hero__intro">
+        <h1 class="hero__title">Shared Prosperity Catalyst</h1>
+        <p class="hero__body g-max-2-half">
+          A multi-year initiative to bring financial health and prosperity to all 
+          in the United States.
+        </p>
       </div>
-      <p>
-        Brought to you by ideas42 with exclusive funding from Wells Fargo
-      </p>
     </div>
-  </div>
-</header>
+  </header>
+{% endblock %}
 
+{% block main %}
 <div class="g-standard-full">
   <div class="g-max-3">
     <h2>Our Mission</h2>
@@ -86,3 +80,19 @@
   </div>
 </div>
 {% endblock %}
+
+<!-- FIXME: Remove this later
+      <div class="credits hero__figure">
+        <div class="credits__logos">
+          <a class="wells-fargo-logo-link" href="https://www.wellsfargo.com/" target="_blank" rel="noopener">
+            <img src="/images/logo-wells-fargo.svg" alt="Wells Fargo logo" width="112"> 
+          </a>
+          <a class="ideas42-logo-link" href="https://ideas42.org" target="_blank" rel="noopener">
+            <img src="/images/logo-ideas42.svg" alt="ideas42" width="138">
+          </a>
+        </div>
+        <p>
+          Brought to you by ideas42 with exclusive funding from Wells Fargo
+        </p>
+      </div>
+      -->

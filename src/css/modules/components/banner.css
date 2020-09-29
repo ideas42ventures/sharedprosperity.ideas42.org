@@ -1,7 +1,3 @@
-.banner {
-  background-color: white;
-}
-
 .banner__logo {
   display: block;
   width: 9.375rem;
@@ -72,4 +68,16 @@
 
 .banner__links a:focus::after {
   background-color: currentColor;
+}
+
+.banner--inverted .logo-color-accent {
+  fill: white;
+}
+
+.banner--inverted .logo-base-mid {
+  fill: var(--color-base-mid);
+}
+
+.banner--inverted a {
+  color: white;
 }
