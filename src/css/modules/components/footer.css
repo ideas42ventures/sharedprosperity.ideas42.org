@@ -27,56 +27,48 @@
     url(/images/logo-shared-prosperity-catalyst-mark-inverse.svg) no-repeat
     1.25rem 1.75rem;
   background-size: 2.25rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .footer__contents > * {
-  flex: 1 1 50%;
-  min-width: var(--g-col);
   padding: 1.5rem 0.5rem 2.5rem 3rem;
 }
 
-.footer__contacts {
-  margin: 0;
-}
-
-.footer__contacts dt {
-  font-weight: 500;
-  padding-bottom: 0.25rem;
-}
-
-.footer__contacts dd,
-.footer__contacts ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer__contacts li {
-  padding-bottom: 0.5rem;
-}
-
-.footer__logos {
+.footer__credit {
   background-color: rgba(0, 0, 0, 0.1);
-  display: inline-flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
   margin-top: calc(var(--g-row) * 3);
-  padding: 1.25rem;
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.footer__logos a,
-.footer__logos img {
+.ideas42-logo-link {
+  transform: translateX(-1rem);
+}
+
+.credit__logos a,
+.credit__logos img {
   border: 0;
   display: block;
 }
 
+.credit__logos {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.credit__msg {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
 .footer__nav {
-  margin-top: calc(var(--g-row) * 5);
+  margin-top: calc(var(--g-row) * 6);
+  text-align: center;
 }
 
 .footer__nav ul {
-  flex: 1 1 50%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -84,5 +76,5 @@
 
 .footer__nav li {
   display: inline-block;
-  margin-right: 1rem;
+  padding: 0.25rem 0.75rem;
 }

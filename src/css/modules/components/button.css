@@ -1,7 +1,7 @@
 .btn {
   background-color: var(--color-accent-2);
   border: 0;
-  border-radius: var(--border-radius, 2rem);
+  border-radius: var(--border-radius, 4px);
   color: white;
   cursor: pointer;
   display: inline-block;

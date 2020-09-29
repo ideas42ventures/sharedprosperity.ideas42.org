@@ -13,6 +13,7 @@ html {
   );
 
   --g-max-2: calc(var(--g-col) * 2 + var(--g-gutter));
+  --g-max-2-half: calc(var(--g-col) * 2.5 + calc(var(--g-gutter) * 2));
   --g-max-3: calc(var(--g-col) * 3 + calc(var(--g-gutter) * 2));
 }
 
@@ -47,6 +48,10 @@ html {
 
 .g-max-2 {
   max-width: var(--g-max-2);
+}
+
+.g-max-2-half {
+  max-width: var(--g-max-2-half);
 }
 
 .g-max-3 {

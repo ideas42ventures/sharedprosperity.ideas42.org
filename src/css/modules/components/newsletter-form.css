@@ -1,21 +1,24 @@
+.newsletter-form {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter__contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .newsletter__info {
   margin: 0;
-  padding: 0 0 calc(var(--g-row) * 4) 0;
-  max-width: 34ch;
+  padding: 0 0 calc(var(--g-row) * 2) 0;
+  max-width: 38ch;
 }
 
 .newsletter-form .field {
-  max-width: 40ch;
+  flex: 1 1;
 }
 
 @media (min-width: 47.5em) {
   .newsletter__info {
-    margin-bottom: 0;
     padding-right: var(--g-gutter);
-  }
-
-  .newsletter__info,
-  .newsletter__controls {
-    flex: 1 1;
   }
 }

@@ -10,7 +10,7 @@ html {
   --font-size-5: calc(32 / 16 * 1rem);
   --font-size-6: calc(34 / 16 * 1rem);
   --font-size-7: calc(46 / 16 * 1rem);
-  --font-size-8: calc(90 / 16 * 1rem);
+  --font-size-8: calc(70 / 16 * 1rem);
 
   font-family: var(--font-sans);
   font-size: var(--font-size-1);
@@ -41,7 +41,7 @@ strong {
 
 h1 {
   color: var(--color-accent);
-  font-size: var(--font-size-7);
+  font-size: var(--font-size-8);
 }
 
 h2 {
