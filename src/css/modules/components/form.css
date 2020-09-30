@@ -55,3 +55,7 @@
   flex: 1 1;
   max-width: min-content;
 }
+
+.field__responses .response {
+  padding-top: 0.5rem;
+}
