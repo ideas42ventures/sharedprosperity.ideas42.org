@@ -1,9 +1,12 @@
 <meta charset="utf-8">
-<meta name="theme-color" content="#0F2043">
+<meta name="theme-color" content="#004357">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% set metaTitle = title or "Shared Prosperity Catalyst" -%}
 {% set ogDescription = meta.description or "A multi-year initiative to bring financial health and prosperity to all in the United States." -%}
+
+{% set metaImage = meta.image or "https://sharedprosperity.ideas42.org/social-default.png" -%}
+{% set metaImageAlt = meta.imageAlt or "A photo illustration made up of squares, circles, and triangles to represent the three building blocks of ideas42 Ventures" -%}
 
 <title>{{ metaTitle }}</title>
 <meta property="og:title" content="{{ metaTitle }}">
@@ -14,7 +17,14 @@
 <meta property="og:description" content="{{ ogDescription }}">
 <meta name="twitter:description" content="{{ ogDescription }}">
 
-<meta property="og:url" content="https://sharedprosperity.ideas42.org"/>
-<meta property="og:type" content="website">
+<meta property="og:url" content="https://sharedprosperity.ideas42.org{{ page.url}}"/>
+<meta name="twitter:url" content="https://sharedprosperity.ideas42.org{{ page.url}}"/>
+
+<meta property="og:image" content="{{ metaImage }}">
+<meta property="og:image:alt" content="{{ metaImageAlt }}">
+<meta name="twitter:image" content="{{ metaImage }}">
+<meta name="twitter:image:alt" content="{{ metaImageAlt }}">
 
 <meta name="twitter:card" content="{{ meta.card or 'summary' }}">
+<meta name="twitter:site" content="@ideas42">
+<meta property="og:type" content="website">
