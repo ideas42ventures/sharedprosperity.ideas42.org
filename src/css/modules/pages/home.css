@@ -3,44 +3,6 @@
   padding-top: calc(var(--g-row) * 4);
 }
 
-.credits {
-  align-items: center;
-  background-color: white;
-  box-shadow: var(--shadow-card);
-  color: var(--color-text-primary);
-  padding: calc(var(--g-row) * 2) calc(var(--g-gutter) * 2);
-  text-align: center;
-}
-
-@media (min-width: 51.875em) {
-  .credits {
-    max-width: 25rem;
-  }
-}
-
-.credits__logos {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem 0 1.2rem 0;
-}
-
-.credits a {
-  border: 0;
-  display: block;
-}
-
-.credits img {
-  display: block;
-}
-
-.credits p {
-  border-top: 1px solid rgba(var(--color-accent-rgb), 0.2);
-  font-size: var(--font-size-3);
-  margin: 0;
-  padding-top: 1rem;
-}
-
 .wells-fargo-logo-link {
   margin-right: var(--g-gutter);
 }
