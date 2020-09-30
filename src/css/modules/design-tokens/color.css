@@ -10,6 +10,7 @@ html {
   --color-accent-2-rgb: 28, 138, 112;
   --color-accent-3: #8ebc41;
   --color-accent-4: #bed73c;
+  --color-accent-4-rgb: 190, 215, 60;
 
   /* color general aliases */
   --color-text-primary: var(--color-base);
