@@ -8,6 +8,7 @@
 
 .hero__intro {
   min-width: calc(var(--g-col) * 1);
+  position: relative;
 }
 
 .hero__title {
@@ -26,6 +27,25 @@
 
 .hero--home {
   text-align: center;
+}
+
+.hero--home .hero__title {
+  position: relative;
+}
+
+.hero--home .hero__intro::before {
+  --size: 10rem;
+  background: transparent url("/images/graphic-tile-accent-2.svg") repeat;
+  background-size: 20px;
+  border-radius: calc(var(--size) / 2);
+  content: "";
+  display: block;
+  height: var(--size);
+  left: 5rem;
+  opacity: 0.75;
+  position: absolute;
+  top: -2rem;
+  width: var(--size);
 }
 
 .hero--home .hero__body {
