@@ -135,3 +135,11 @@ main a:hover {
   margin-left: auto;
   max-width: 44ch;
 }
+
+p + h2 {
+  margin-bottom: 0.25rem;
+}
+
+h2 + p {
+  margin-top: 0;
+}
