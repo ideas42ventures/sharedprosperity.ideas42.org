@@ -13,6 +13,10 @@ We use [Netlify forms](https://docs.netlify.com/forms/setup/) to handle the cont
 - Form submissions are stored in the forms section of Netlify
 - We send a copy of every submission to `spc@ideas42.org`
 
+## Design
+
+Available in Figma https://www.figma.com/file/fGwp7zO7prD9qipvkGNF3s/Shared-Prosperity-Catalyst-Site
+
 ## Contributing
 
 - This is a static site build using [Eleventy](https://www.11ty.dev/docs)
