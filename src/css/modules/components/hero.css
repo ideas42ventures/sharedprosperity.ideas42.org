@@ -21,8 +21,28 @@
 }
 
 .hero__body {
+  font-size: var(--font-size-5);
+}
+
+.hero__box {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: var(--shadow-card);
+  border: 0;
+  display: block;
+  padding: 1.25rem 1.75rem;
+  margin: calc(var(--g-row)*4) 0;
+}
+
+.hero__details {
+
+}
+.hero__details summary {
   font-size: var(--font-size-4);
-  margin: 0;
+  text-decoration: underline;
+  color: var(--color-accent);
+  margin: 0.5rem 0;
+  cursor: pointer;
 }
 
 .hero--home {
