@@ -1,0 +1,31 @@
+.contexts {
+  display: grid;
+  gap: var(--g-gutter);
+  grid-template-columns: repeat(auto-fill, minmax(13rem,1fr));
+  list-style: none;
+  margin: calc(var(--g-row)*4) 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.context {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.context img {
+  max-height: 150px;
+  margin: 0 auto;
+}
+
+.context h2 {
+  font-size: var(--font-size-4);
+  margin-top: 0.75rem;
+}
+
+.context p {
+  color: var(--color-base);
+  font-size: var(--font-size-3);
+  margin-top: calc(var(--g-row) * 2);
+}
