@@ -3,14 +3,13 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 93.78 65.19" style="enable-background:new 0 0 93.78 65.19;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#004357;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#004357;stroke-miterlimit:10;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#BBD927;}
 	.st2{fill:#074357;}
 	.st3{fill:#BBD927;stroke:#004358;stroke-width:0.5;stroke-miterlimit:10;}
 	.st4{fill:none;stroke:#004358;stroke-width:0.25;stroke-miterlimit:10;}
 	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#8EBC41;}
 </style>
-<rect x="33.18" y="3.11" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 59.6108 -30.0702)" class="st0" width="23.32" height="23.32"/>
 <rect x="33.18" y="3.11" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 59.6108 -30.0702)" class="st0" width="23.32" height="23.32"/>
 <circle class="st1" cx="13.78" cy="14.77" r="11.64"/>
 <g>
