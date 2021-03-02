@@ -12,16 +12,19 @@
   padding: 0;
   margin: 0;
   text-align: center;
+
 }
 
 .context img {
-  max-height: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 
-.context h2 {
+.context h4 {
   font-size: var(--font-size-4);
   margin-top: 0.75rem;
+  min-height: 2.5em;
+  margin-bottom: 0;
 }
 
 .context p {
