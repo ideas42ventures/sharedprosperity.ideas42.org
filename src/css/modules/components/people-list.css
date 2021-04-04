@@ -1,10 +1,16 @@
 .people-list {
   display: grid;
   gap: calc(var(--g-gutter) * 2);
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   list-style: none;
   margin: 2rem 0 8rem 0;
   padding: 0;
+}
+
+@media (min-width: 47.5em) {
+  .people-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
 
 .person {
@@ -28,6 +34,7 @@
 .person__img {
   display: block;
   width: 100%;
+  max-width: 400px;
 }
 
 .person__info {
