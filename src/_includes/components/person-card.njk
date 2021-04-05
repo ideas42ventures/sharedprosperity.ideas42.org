@@ -16,9 +16,13 @@
     {% endif %}
 
     {% if person.bio %}
-      <p class="person__bio">
-        {{ person.bio }}
-      </p>
+      <p class="person__bio-summary">{{ person.bioSummary }}</p>
+      <details class="person__bio-full">
+        <summary>Show more...</summary>
+        <p>
+          {{ person.bio }}
+        </p>
+      </details>
     {% endif %}
 
   </div>
