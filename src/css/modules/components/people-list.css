@@ -1,0 +1,103 @@
+.people-list {
+  list-style: none;
+  margin: 2rem 0 8rem 0;
+  padding: 0;
+}
+
+.person {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.person .card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+@media (min-width: 40em) {
+  .person .card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .person__img {
+    max-width: 300px;
+  }
+}
+
+.person__team {
+  color: var(--color-accent-2);
+  font-size: var(--font-size-0);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.person__img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.person__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 0.75rem 0;
+}
+
+.person__info p {
+  margin: 1em 0 0;
+}
+
+.person__name {
+  font-size: var(--font-size-4);
+  margin: 0.2rem 0;
+  color: var(--color-accent);
+}
+
+.person__focus {
+  line-height: 1.2;
+  margin: 0;
+  color: var(--color-accent-2);
+}
+
+.person__bio-full summary {
+  margin: 0;
+  display: inline-block;
+  box-shadow: inset 0 0 0 rgba(var(--color-accent-2-rgb), 0);
+  border-bottom: 1px solid var(--color-accent-2);
+  color: var(--color-accent);
+  transition: 0.16s ease;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.person__bio-full summary:hover {
+  box-shadow: inset 0 -1em 0 rgba(var(--color-accent-2-rgb), 0.15);
+}
+
+.person__social-link {
+  border: 0;
+  display: inline-block;
+  margin-top: 1rem;
+  max-width: 4rem;
+  filter: grayscale(100);
+  opacity: 0.7;
+  transition: filter 0.3s, opacity 0.3s;
+}
+
+.person__social-link:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  box-shadow: none;
+}
+
+.person__social-link img {
+  display: block;
+  width: 100%;
+}
