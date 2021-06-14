@@ -50,8 +50,12 @@
   padding: 0 0 0.75rem 0;
 }
 
+.person__info p {
+  margin: 1em 0 0;
+}
+
 .person__name {
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-4);
   margin: 0.2rem 0;
   color: var(--color-accent);
 }
