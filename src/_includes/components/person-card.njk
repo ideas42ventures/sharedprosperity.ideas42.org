@@ -1,0 +1,29 @@
+{% macro person_card(person) %}
+<div class="card">
+  <img class="person__img" src="/images/people/{{ person.img }}" alt="A photo of {{ person.name }}">
+  <div class="person__info">
+    <div>
+      <h3 class="person__name">{{ person.name }}</h3>
+      <p class="person__focus">
+        {{ person.role }}
+      </p>
+    </div>
+
+    {% if person.linkedin %}
+      <a class="person__social-link" href="{{ person.linkedin }}" target="_blank" rel="noopener">
+        <img src="/images/logo-linkedin.png" alt="Go to {{ person.name }}'s LinkedIn Profile">
+      </a>
+    {% endif %}
+
+    {% if person.bio %}
+      <p>{{ person.bioSummary }}</p>
+      <p>{{ person.bio }}</p>
+    {% endif %}
+
+    {% if person.youtube %}
+      <p><img src="/images/youtube-logo.png" width="18" alt="YouTube">&nbsp;&nbsp; <a href="{{ person.youtube }}" target="_blank" rel="noopener">Meet {{ person.name }}</a></p>
+    {% endif %}
+
+  </div>
+</div>
+{% endmacro %}

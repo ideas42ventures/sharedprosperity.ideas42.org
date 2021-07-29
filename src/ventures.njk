@@ -1,7 +1,7 @@
 ---
 title: Ventures - Shared Prosperity Catalyst
 ---
-
+{%from "components/person-card.njk" import person_card  %}
 {% extends "layouts/base.njk" %}
 
 {% block main %}
@@ -16,33 +16,44 @@ title: Ventures - Shared Prosperity Catalyst
 <div class="g-standard-full">
   <div class="g-max-3 font-size-3">
     <p class="hero__body">
-      Building scalable technology businesses focused on overcoming barriers to good financial health. 
+      Building scalable technology businesses focused on overcoming barriers to good financial health.
     </p>
     <p>
-      This ambitious, 3-year program focuses on co-building multiple impact 
-      businesses. We are looking for four talented individuals to join our first 
-      18-month business building program that begins in January, 2021. We will 
-      work with our first cohort of entrepreneurs to focus on building 
-      businesses that address the <a href="https://ideas42ventures.com/ventures-for-shared-prosperity/focus-area/">excess costs of poverty</a>. Members of our 
-      cohort will receive a full salary and benefits for 18 
-      months, and be surrounded with software development, 
-      business design, and behavioral research experts to help kickstart an 
-      incredible impact business. 
+      This ambitious, 3-year program focuses on co-building multiple impact
+      businesses. We are looking for four talented individuals to join our first
+      18-month business building program that begins in January, 2021. We will
+      work with our first cohort of entrepreneurs to focus on building
+      businesses that address the <a href="https://ideas42ventures.com/ventures-for-shared-prosperity/focus-area/">excess costs of poverty</a>. Members of our
+      cohort will receive a full salary and benefits for 18
+      months, and be surrounded with software development,
+      business design, and behavioral research experts to help kickstart an
+      incredible impact business.
     </p>
 
     <h2>Mission/vision</h2>
     <p>
-      At Ventures for Shared Prosperity we believe we can help improve the lives 
-      of individuals living in poverty by partnering with talented 
-      people to build and scale software-powered, behavioral science 
-      informed businesses that address the varied, complex, and structural 
-      causes of poverty in America.  
+      At Ventures for Shared Prosperity we believe we can help improve the lives
+      of individuals living in poverty by partnering with talented
+      people to build and scale software-powered, behavioral science
+      informed businesses that address the varied, complex, and structural
+      causes of poverty in America.
     </p>
     <p>
-      Visit <a href="https://ideas42ventures.com/ventures-for-shared-prosperity/">Ventures for Shared Prosperity</a> 
-      to learn more about our business-building  model, our philosophy on entrepreneurship, what opportunities we see to 
+      Visit <a href="https://ideas42ventures.com/ventures-for-shared-prosperity/">Ventures for Shared Prosperity</a>
+      to learn more about our business-building  model, our philosophy on entrepreneurship, what opportunities we see to
       address the excess costs of poverty, and why you should <a href="https://www.ideas42ventures.com/ventures-for-shared-prosperity/apply/">apply</a>.
     </p>
   </div>
+
+  <h2>Entrepreneurs</h2>
+
+  <ul class="people-list">
+    {% for person in people %}
+      <li class="person">
+        {{ person_card(person) }}
+      </li>
+    {% endfor %}
+  </ul>
+
 </div>
 {% endblock %}
