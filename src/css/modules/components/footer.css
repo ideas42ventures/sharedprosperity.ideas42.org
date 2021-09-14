@@ -2,7 +2,7 @@
   background-color: var(--color-accent-mod);
   color: white;
   padding-top: calc(var(--g-row) * 4);
-  padding-bottom: calc(var(--g-row) * 18);
+  padding-bottom: calc(var(--g-row) * 4);
 }
 
 .footer a {

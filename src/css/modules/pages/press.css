@@ -1,0 +1,9 @@
+.press h2 {
+  font-size: var(--font-size-4);
+  margin-bottom: 0.75em;
+  margin-top: 2em;
+}
+
+.press p + h2 {
+  margin-bottom: 0.75em;
+}
