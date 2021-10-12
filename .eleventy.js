@@ -21,6 +21,7 @@ module.exports = function (conf) {
   conf.addPassthroughCopy("./src/manifest.webmanifest");
   conf.addWatchTarget("./src/**/*.css");
   conf.addWatchTarget("./src/js/**/*.js");
+  conf.addPassthroughCopy("./src/admin");
 
   return {
     dir: {
