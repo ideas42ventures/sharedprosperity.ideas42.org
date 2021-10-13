@@ -14,17 +14,14 @@ local_backend: true
 # Add your collections. Here's an example of multiple collections:
 collections:
   # First Collection
-  - label: "Blog"
-    name: "blog"
-    folder: "src/blog/posts" # Where the new posts should be saved to
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Press"
+        name: "press"
+        file: "src/press.njk"
+        fields:
+          - { label: Title, name: title, widget: string }
     create: true # This allows you to create new instances in the CMS
     editor:
       preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "Hanna" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: list, default: ["post"] }
-      - { label: "Layout", name: "layout", widget: string, default: "post.njk" }
-      - { label: "Body", name: "body", widget: "markdown" }
