@@ -16,12 +16,13 @@ collections:
   # First Collection
   - label: "Pages"
     name: "pages"
+    extension: "json"
     files:
       - label: "Press"
         name: "press"
-        file: "src/press.njk"
+        file: "src/_data/people.json"
         fields:
-          - { label: Title, name: title, widget: string }
-    create: true # This allows you to create new instances in the CMS
+          - { label: Name, name: name, widget: string }
+    # create: true # This allows you to create new instances in the CMS
     editor:
       preview: false
