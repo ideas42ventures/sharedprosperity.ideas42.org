@@ -1,5 +1,13 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "ignorePaths": [".github/**"],
+  "packageRules": [{
+    "matchUpdateTypes": ["minor", "patch"],
+    "matchCurrentVersion": "!/^0/"
+  }],
+  "automerge": true,
+  "automergeStrategy": "squash",
+  "rebaseStalePrs": true
 }
